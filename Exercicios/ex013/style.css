@@ -1,0 +1,15 @@
+@charset "UTF-8";
+body {
+    background-color: rgb(195, 205, 214);
+    font-family: Montserrat;
+    font-size: 20px;
+}
+h1 {
+    color: rgb(17, 17, 92);
+}
+h2 {
+    color: azure;
+}
+p {
+    text-align: justify;
+}

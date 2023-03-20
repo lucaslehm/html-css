@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(241, 171, 220);
+    font-size: 20px;
+    font-family: 'Montserrat';
+    text-align: justify;
+}
+h1 {
+    color: rgb(131, 41, 83);
+}
+h1#principal {
+    background-color:rgb(131, 41, 83);
+    color: aliceblue;
+    text-align: center;
+}
+h2 {
+    color: rgb(41, 10, 10);
+}
+.subtitulo {
+    background-color: #7700ff28;
+}

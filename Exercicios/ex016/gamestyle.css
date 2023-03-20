@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+        body {
+            background-color: #14111b;
+            font-family: 'Montserrat';
+            color: aliceblue;
+        }
+        h1 {
+            text-align: center;
+        }
+        div.game1 > p  {
+            display: none;
+        }
+        div.game1:hover > p {
+            display: block;
+        }
+        div.game1.certo:hover {
+            color: aqua;
+        }
+        div.game1.errado:hover {
+            color: red;
+        }
+        div.game1.certo:active {
+            color: rgb(255, 153, 0);
+        }
+
+        div.game2 {
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            background-color: #2d74b35d;
+            text-align: center;
+        }
+        div.game2 > p {
+            display: none;
+        }
+        
+        div.game2:hover > p {
+            display: block;
+        }
+
+        div.game2.certo2:hover {
+            background-color: #15ff0063;
+        }
+        div.game2.errado2:hover {
+            background-color: rgba(255, 0, 0, 0.37);
+        }
