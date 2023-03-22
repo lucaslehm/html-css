@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            background-color: #19192c;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 10px;
+            border: 1px solid white;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th {
+            background-color: #262b42;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabelas</h1>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <th scope="col">Grupos</th>
+            <th scope="col">Nomes</th>
+            <th scope="colgroup" colspan="2">Filmes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="2">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Hulk</td>
+                <td>Rambo</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
