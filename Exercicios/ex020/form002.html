@@ -5,14 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários 2</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        fieldset {
+            margin-top: 20px;
+        }
+        #ihistoria {
+            height: 100px;
+            text-align: unset;
+        }
+     </style>
 </head>
 <body>
     <h1>Testando Formulários</h1>
-    <p>Insira seus dados abaixo</p>
+    <h2>Crie seu personagem para Dungeons & Dragons!</h2>
     <form action="cadastro.php" method="post">
-        <p><label for="isu">Usuário:</label> <input type="text" name="usu" id="iusu"></p>
-        <p><label for="isen">Senha:</label><input type="password" name="sen" id="isen"></p>
-        <input type="submit" value="Enviar">
+        <fieldset>
+            <legend>Dados do Jogador</legend>
+            <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome" required></p>
+            <p><label for="iidade">Idade:</label> <input type="number" name="idade" id="iidade" min="0" max="99" required></p>
+            <p><label for="itel">Telefone:</label> <input type="tel" name="tel" id="itel" placeholder="(xx)xxxxx-xxxx" required></p>
+            <p><label for="iemail">Email:</label> <input type="email" name="email" id="iemail"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Dados do Personagem</legend>
+            <p><label for="ipnome">Nome:</label> <input type="text" name="pnome" id="ipnome" required></p>
+            <fieldset>
+                <legend>Raça</legend>
+                <p><input type="radio" name="raca" id="ihuman"><label for="ihuman">Humano</label></p>
+                <p><input type="radio" name="raca" id="ielfo"><label for="ielfo">Elfo</label></p>
+                <p><input type="radio" name="raca" id="ianao"><label for="ianao">Anão</label></p>
+                <p><input type="radio" name="raca" id="iorc"><label for="iorc">Orc</label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Classe</legend>
+                <p><input type="radio" name="classe" id="imago"><label for="imago">Mago</label></p>
+                <p><input type="radio" name="classe" id="iguerreiro"><label for="iguerreiro">Guerreiro</label></p>
+                <p><input type="radio" name="classe" id="iladino"><label for="iladino">Ladino</label></p>
+                <p><input type="radio" name="classe" id="idruida"><label for="idruida">Druída</label></p>
+            </fieldset>
+            <p><label for="ipidade">Idade:</label> <input type="number" name="pidade" id="ipidade" min="0" max="150" required></p>
+            <p><label for="ihistoria">História:</label><input type="text" name="historia" id="ihistoria" size="103px" placeholder="um dia vou aprender a resolver esse bug"></p>
+        </fieldset>
+        <p>Os valores de atributos serão carregados automaticamente de forma aleatoria!</p>
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
     </form>
 </body>
 </html>
