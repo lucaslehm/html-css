@@ -1,0 +1,45 @@
+/*Estilo para Todas as Telas*/
+
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace
+}
+header {
+    padding: 10px;
+    text-align: center;
+    background-color: #aefcfc;
+    border-radius: 10px 10px 0px 0px;
+}
+header h1 {
+    margin-bottom: 10px;
+}
+body {
+    background-color: #2d426e;
+}
+main {
+    border-radius: 0px 0px 10px 10px;
+    background-color: aliceblue;
+}
+article {
+    text-align: justify;
+}
+article h2 {
+    padding: 0px;
+}
+menu {
+    display: none;
+    padding: 0px;
+}
+ul {
+    padding: 0px;
+    list-style-type: none;
+}
+li {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #2d426e57;
+    display: inline-block;
+}
