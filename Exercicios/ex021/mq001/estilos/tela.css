@@ -1,6 +1,7 @@
+@charset "UTF-8";
+
 /*Estilo para Todas as Telas*/
 
-@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 * {
     margin: 0px;

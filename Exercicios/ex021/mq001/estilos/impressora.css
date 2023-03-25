@@ -1,6 +1,7 @@
-/*Estilo para Todas as Telas*/
-
 @charset "UTF-8";
+
+/*Estilo para Impressão*/
+
 * {
     margin: 0px;
     padding: 10px;
