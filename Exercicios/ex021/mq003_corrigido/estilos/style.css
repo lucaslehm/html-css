@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/*Estilo Geral - MobileFirst*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body, html {
+    background-color: #2e2e68;
+}
+header {
+    background-color: #251549;
+    margin-bottom: 20px;
+}
+header h1 {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+#burger {
+    display: block;
+    background-color: #190e38;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
+#burger:hover {
+    background-color: #322158;
+    cursor: pointer;
+}
+menu {
+    display: none;
+    text-align: center;
+}
+menu ul {
+    list-style-type: none;
+}
+menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    background-color: #130a2c;
+    border-top: 1px solid #0000007e;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+}
+menu a:hover {
+    background-color: #0d071d;
+}
+main {
+    box-shadow: 3px 3px 7px #0000002a;
+    width: 90vw;
+    background-color: aliceblue;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+article h2 {
+    color: #180d31;
+    padding-bottom: 20px;
+}
+article p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}

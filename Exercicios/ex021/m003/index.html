@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries 3</title>
+    <link rel="stylesheet" href="estilo/mobile-first.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/media-queries.css">
+</head>
+<body>
+    <header>
+        <h1>Testando Media Query</h1>
+        <div id="burger" class="material-icons" onclick="clickMenu()">menu</div>
+        <menu id="itens" onresize="mudouTamanho()">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Manchete</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere inventore doloremque velit odit, id harum nemo eveniet? Vel debitis doloremque repudiandae asperiores! Adipisci recusandae hic quod aliquam harum itaque iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vel doloremque explicabo. Quidem ex at esse impedit modi corporis aspernatur explicabo amet eligendi, magnam veniam, itaque similique vel, ad ratione.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere inventore doloremque velit odit, id harum nemo eveniet? Vel debitis doloremque repudiandae asperiores! Adipisci recusandae hic quod aliquam harum itaque iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vel doloremque explicabo. Quidem ex at esse impedit modi corporis aspernatur explicabo amet eligendi, magnam veniam, itaque similique vel, ad ratione.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere inventore doloremque velit odit, id harum nemo eveniet? Vel debitis doloremque repudiandae asperiores! Adipisci recusandae hic quod aliquam harum itaque iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vel doloremque explicabo. Quidem ex at esse impedit modi corporis aspernatur explicabo amet eligendi, magnam veniam, itaque similique vel, ad ratione.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                    itens.style.display = 'none'
+                }
+            }
+    </script>
+</body>
+</html>
