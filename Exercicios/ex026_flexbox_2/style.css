@@ -7,11 +7,11 @@
 .container {
     background-color: #04294023;
     padding: 10px;
-    height: 500px;
+    height: 300px;
     display: flex; /*"Liga" a FlexBox*/
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px 30px;
     border-radius: 10px;
 }
@@ -22,7 +22,7 @@
     border-radius: 10px;
     font-weight: bold;
 
-    order: 1;
+    order: 0;
     /* flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto; */
@@ -40,7 +40,6 @@
     flex-shrink: 1;
     flex-basis: auto; */
     flex: 0 1 auto;
-    align-self: flex-start;
 }
 .d3 {
     background-color: #005C53;
@@ -49,14 +48,13 @@
     border-radius: 10px;
     font-weight: bold;
 
-    order: -1;
-    /* flex-grow: 0;
+    order: 0;
+    flex-grow: 0;
     flex-shrink: 1;
-    flex-basis: 0; */
+    flex-basis: 0;
     flex: 0 1 auto;
-    align-self: flex-end;
 }
 .d1, .d2, .d3 {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
 }
