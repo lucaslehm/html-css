@@ -1,0 +1,20 @@
+.container {
+    background-color: #373737;
+    border: 2px solid red;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 50vh;
+    justify-content: end; /*Alinhamento Horizontal*/
+    align-items: start;  /*Alinhamento Vertical*/
+    /*
+      Center - Centro
+      Start  - Esquerda
+      End    - Direita
+      */
+}
+.container div{
+    background-color: aliceblue;
+    border: 2px solid blue;
+    padding: 20px;
+}

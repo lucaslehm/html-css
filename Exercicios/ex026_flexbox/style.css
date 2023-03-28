@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #D6D58E;
+}
+.container {
+    background-color: #04294023;
+    padding: 10px;
+    height: 40vh;
+    display: flex; /*"Liga" a FlexBox*/
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px 30px;
+}
+.d1 {
+    background-color: #DBF227;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.d2 {
+    background-color: #9FC131;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.d3 {
+    background-color: #005C53;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
